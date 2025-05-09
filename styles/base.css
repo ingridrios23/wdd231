@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4;
+  color: #222;
+  padding: 1rem;
+}
+
+header {
+  background-color: #003049;
+  color: white;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  position: relative;
+}
+
+header .profile-pic {
+  width: 80px;
+  height: 90px;
+  border-radius: 30%;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+}
+
+nav {
+  background-color: #000;
+}
+
+.nav-bar {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.nav-bar li a {
+  display: block;
+  padding: 0.8rem 1rem;
+  color: white;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.nav-bar li a:hover,
+.nav-bar li a.active {
+  background-color: #fcbf49;
+  color: #000;
+  font-weight: bold;
+}
+
+main {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+h2 {
+  text-align: left;
+  margin-bottom: 1rem;
+  color: #003049;
+  font-size: 1rem;
+  max-width: 90%;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  flex: 1;
+  min-width: 280px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 px rgba(0,0,0,0.1);
+  padding: 1rem;
+}
+
+.card h3 {
+  background-color:#003049;
+  color: white;
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.card img {
+  width: 80%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.filters button {
+  padding: 0.4rem 1rem;
+  background-color: #000;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.filters button:hover {
+  background-color: #fcbf49;
+  color: #000;
+}
+
+.course-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+
+footer {
+  background-color: #003049;
+  color: white;
+  text-align: center;
+  padding: 1rem 1rem 2rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin: 0.5rem 0;
+}
+
+.course-code {
+  background-color:#78350f!important; 
+  color: #000 !important;
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
