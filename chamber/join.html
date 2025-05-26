@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Join the Chamber</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<header>
+  <div class="logo-title">
+    <a href="index.html" class="logo-link">
+      <img src="img/logo.png" alt="Chamber of Commerce Logo" class="logo" />
+    </a>
+    <h1>Chamber of Commerce of Lima</h1>
+  </div>
+  <button id="menuBtn" aria-label="Toggle navigation menu" aria-expanded="false">☰ Menu</button>
+  <nav>
+    <ul class="hidden">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="directory.html">Directory</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="container">
+  <section class="join-section">
+    <h2>Become a Member</h2>
+    <p>Joining the Chamber of Commerce of Lima gives you access to business networking events, professional development, and exclusive member promotions.</p>
+
+    <h3>Membership Levels</h3>
+    <ul>
+      <li><strong>Gold:</strong> Premium listing, event sponsorship, and promotional features.</li>
+      <li><strong>Silver:</strong> Directory listing and event invitations.</li>
+      <li><strong>Bronze:</strong> Basic access to chamber resources.</li>
+    </ul>
+
+    <h3>Apply Now</h3>
+    <form action="#" method="post" class="join-form">
+      <label for="name">Business Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="level">Membership Level:</label>
+      <select id="level" name="level" required>
+        <option value="">-- Select --</option>
+        <option value="Gold">Gold</option>
+        <option value="Silver">Silver</option>
+        <option value="Bronze">Bronze</option>
+      </select>
+
+      <button type="submit" class="cta-button">Submit Application</button>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 Chamber of Commerce. All rights reserved.</p>
+  <p><a href="mailto:info@chamber.org">info@chamber.org</a> | Tel: 123-456-7890</p>
+</footer>
+
+<script src="scripts/menu.js"></script>
+</body>
+</html>
