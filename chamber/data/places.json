@@ -1,0 +1,50 @@
+[
+  {
+    "title": "City Museum",
+    "image": "img/item1.webp",
+    "address": "123 History Ave, lima",
+    "description": "A cultural hub with centuries of local history."
+  },
+  {
+    "title": "Central Park",
+    "image": "img/item2.webp",
+    "address": "456 Green Rd, lima",
+    "description": "Beautiful green spaces and recreational areas."
+  },
+  {
+    "title": "Art Gallery",
+    "image": "img/item3.webp",
+    "address": "789 Paint Ln, lima",
+    "description": "Modern and classical art exhibitions."
+  },
+  {
+    "title": "Tech Hub",
+    "image": "img/item4.webp",
+    "address": "1010 Silicon St, lima",
+    "description": "Innovation and entrepreneurship center."
+  },
+  {
+    "title": "University Campus",
+    "image": "img/item5.webp",
+    "address": "1111 Scholar Ave, lima",
+    "description": "Leading educational institutions and research."
+  },
+  {
+    "title": "Farmers Market",
+    "image": "img/item6.webp",
+    "address": "1212 Market Blvd, lima",
+    "description": "Fresh produce and local artisans every weekend."
+  },
+  {
+    "title": "Historic Theater",
+    "image": "img/item7.webp",
+    "address": "1313 Stage Rd, lima",
+    "description": "Performing arts in a historic venue."
+  },
+  {
+    "title": "Aquatic Center",
+    "image": "img/item8.webp",
+    "address": "1414 Splash St, lima",
+    "description": "Indoor pools and water fun for all ages."
+  }
+]
