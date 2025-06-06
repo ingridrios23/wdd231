@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Site Plan - Urban Green Spaces Initiative</title>
+
+  <!-- Link to Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet" />
+
+  <style>
+    /* Color Scheme */
+    :root {
+      --primary-color: #2a9d8f; /* teal green for headings, accents */
+      --secondary-color: #264653; /* dark blue for backgrounds, nav */
+      --background-color: #f0f4f8; /* light background */
+      --text-color: #333333; /* main text */
+      --accent-color: #e76f51; /* orange accent */
+    }
+
+    body {
+      margin: 1rem auto;
+      max-width: 900px;
+      font-family: 'Open Sans', sans-serif;
+      background-color: var(--background-color);
+      color: var(--text-color);
+      line-height: 1.6;
+      padding: 1rem;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Montserrat', sans-serif;
+      color: var(--primary-color);
+      margin-top: 1.5rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      border-bottom: 3px solid var(--accent-color);
+      padding-bottom: 0.3rem;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+
+    /* Scenarios list */
+    ul {
+      list-style-type: disc;
+      margin-left: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    /* Wireframe container */
+    .wireframe-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+
+    .wireframe {
+      border: 2px dashed var(--primary-color);
+      padding: 1rem;
+      flex: 1 1 300px;
+      background: white;
+    }
+
+    .wireframe h3 {
+      text-align: center;
+      color: var(--accent-color);
+    }
+
+    /* Simple wireframe sketch using boxes */
+    .box {
+      border: 1px solid var(--secondary-color);
+      background-color: #e9f5f4;
+      margin: 0.5rem 0;
+      padding: 1rem;
+      text-align: center;
+      color: var(--secondary-color);
+      font-style: italic;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 600px) {
+      .wireframe-container {
+        flex-direction: column;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Individual Project Site Plan</h1>
+
+  <section>
+    <h2>Site Name</h2>
+    <p><strong>Urban Green Spaces Initiative</strong></p>
+    <p>This name reflects the project's focus on promoting and improving urban parks and green areas for city residents, emphasizing sustainability and community engagement.</p>
+    <p><em>Optional domain availability:</em> <a href="https://www.namecheap.com/domains/registration/results/?domain=urbangreenspaces.org" target="_blank" rel="noopener">urbangreenspaces.org</a></p>
+  </section>
+
+  <section>
+    <h2>Site Purpose</h2>
+    <p>The website serves as a community hub to inform visitors about local green space projects, provide resources for park activities, events calendars, volunteer sign-ups, and tips for sustainable urban gardening.</p>
+  </section>
+
+  <section>
+    <h2>Scenarios</h2>
+    <ul>
+      <li>Where can I find upcoming events related to community gardening?</li>
+      <li>How can I volunteer to help maintain local parks?</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Color Schema</h2>
+    <p><strong>Primary Color:</strong> <span style="color: var(--primary-color)">#2a9d8f (Teal Green)</span> - Used for headings, buttons, and highlights to evoke nature and freshness.</p>
+    <p><strong>Secondary Color:</strong> <span style="color: var(--secondary-color)">#264653 (Dark Blue)</span> - Used for backgrounds and navigation bars for strong contrast and readability.</p>
+    <p><strong>Accent Color:</strong> <span style="color: var(--accent-color)">#e76f51 (Orange)</span> - Used sparingly for call-to-action buttons and important notices.</p>
+    <p><strong>Background Color:</strong> <span style="color: var(--background-color); background: var(--background-color); padding: 0 5px;">#f0f4f8 (Light Blue)</span> - Used for main page background for a calm, clean look.</p>
+  </section>
+
+  <section>
+    <h2>Typography</h2>
+    <ul>
+      <li><strong>Montserrat (Bold)</strong> - Used for all headings (h1, h2, h3) to provide a modern, strong, and clear typographic hierarchy.</li>
+      <li><strong>Open Sans</strong> - Used for all body text and paragraphs for readability and a clean, neutral look.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Wireframe</h2>
+    <p>Below are simple wireframe sketches representing the layout of the home page for both mobile and desktop views.</p>
+    
+    <div class="wireframe-container">
+      <div class="wireframe" aria-label="Mobile view wireframe">
+        <h3>Mobile View</h3>
+        <div class="box" style="height: 60px;">Logo/Header</div>
+        <div class="box" style="height: 40px;">Navigation Menu (Hamburger)</div>
+        <div class="box" style="height: 150px;">Hero Image / Banner</div>
+        <div class="box" style="height: 100px;">Introduction Text</div>
+        <div class="box" style="height: 120px;">Upcoming Events Section</div>
+        <div class="box" style="height: 80px;">Volunteer Sign-Up Call to Action</div>
+        <div class="box" style="height: 60px;">Footer with Contact Info</div>
+      </div>
+
+      <div class="wireframe" aria-label="Desktop view wireframe">
+        <h3>Desktop View</h3>
+        <div class="box" style="height: 80px;">Logo/Header + Horizontal Navigation</div>
+        <div class="box" style="height: 250px;">Large Hero Image with Tagline</div>
+        <div class="box" style="display: flex; gap: 1rem;">
+          <div class="box" style="flex: 2; height: 180px;">Introduction / About</div>
+          <div class="box" style="flex: 1; height: 180px;">Events Sidebar</div>
+        </div>
+        <div class="box" style="height: 150px;">Volunteer Sign-Up Section with Form</div>
+        <div class="box" style="height: 80px;">Footer with Links and Contact Info</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Testing and Validation</h2>
+    <p>To ensure quality, the following checks will be performed:</p>
+    <ul>
+      <li>HTML validation using <a href="https://validator.w3.org/" target="_blank" rel="noopener">W3C Validator</a>.</li>
+      <li>Accessibility audit using tools like <a href="https://wave.webaim.org/" target="_blank" rel="noopener">WAVE</a> and Lighthouse.</li>
+      <li>Color contrast checked to meet WCAG AA standards.</li>
+      <li>SEO best practices: semantic HTML, meaningful meta tags, alt text for images.</li>
+      <li>Performance optimized by minimizing CSS and images, using efficient layouts.</li>
+    </ul>
+  </section>
+
+</body>
+</html>
