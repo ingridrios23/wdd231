@@ -1,0 +1,16 @@
+/* Minimal Normalize.css to reset browser defaults */
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+  font-family: sans-serif;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WDD231 Course Homepage</title>
+  <meta name="description" content="Homepage for WDD231 course with semantic structure and responsive design" />
+  <meta name="author" content="ingrid rios " />
+
+  <!-- Normalize CSS -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+
+
+  <script defer src="scripts/navigation.js"></script>
+  <script defer src="scripts/date.js"></script>
+  <script defer src="scripts/course.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="img/logo.svg" alt="Site Logo" />
+      <span class="site-name">WDD 231</span>
+      <button id="hamburger" aria-label="Navigation Menu">&#9776;</button>
+    </div>
+    <nav id="nav-links" role="navigation" aria-label="Main menu">
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="chamber.html">Chamber</a></li>
+        <li><a href="final.html">Final</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Welcome to WDD231 Course</h1>
+
+    <section>
+      <h2>Section 1: Course Information</h2>
+      <p>This section contains information about the course content and objectives.</p>
+    </section>
+
+    <section>
+      <h2>Section 2: Resources and Materials</h2>
+      <p>Find all necessary resources here to complete the class.</p>
+    </section>
+
+    <section>
+      <h2>Section 3: Contact and Support</h2>
+      <p>For any questions, contact the instructor or support team.</p>
+    </section>
+
+    <section aria-label="Program courses">
+  <div class="course-filters">
+    <button onclick="displayCourses('all')">All Courses</button>
+    <button onclick="displayCourses('WDD')">WDD Courses</button>
+    <button onclick="displayCourses('CSE')">CSE Courses</button>
+  </div>
+  <div id="course-cards"></div>
+</section>
+
+  </main>
+
+  <footer>
+    <div class="social-links">
+      <a href="https://github.com/yourusername" target="_blank" rel="noopener" aria-label="GitHub">
+        <img src="img/github.svg" alt="GitHub" />
+      </a>
+      <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <img src="img/linkedin.svg" alt="LinkedIn" />
+      </a>
+    </div>
+    <p>&copy; <span id="year"></span> ingrid rios </p>
+    <p>lima, Peru</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
