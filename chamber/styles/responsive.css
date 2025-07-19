@@ -1,0 +1,82 @@
+/* === TABLET VIEW (≤768px) === */
+@media screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  .spotlight-container {
+    flex-direction: column;
+  }
+
+  .spotlight-card {
+    flex: 1 1 100%;
+  }
+
+  .cta {
+    padding: 1rem;
+  }
+
+  .cta h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* === MOBILE VIEW (≤480px) === */
+@media screen and (max-width: 480px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo {
+    margin-bottom: 1rem;
+  }
+
+  .cta-button {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .hero img {
+    max-height: 250px;
+  }
+
+  .spotlight-card {
+    padding: 1rem;
+  }
+}
+/* Ocultar botón hamburguesa por defecto */
+.menu-toggle {
+  display: none;
+  font-size: 2.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+/* Mostrar botón hamburguesa y ocultar menú en pantallas pequeñas */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  #primary-nav ul {
+    display: none;
+    flex-direction: column;
+    padding-left: 0;
+    margin-top: 0.5rem;
+  }
+
+  #primary-nav ul.show {
+    display: flex;
+  }
+
+  #primary-nav ul li {
+    margin: 10px 0;
+  }
+}
+
