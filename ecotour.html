@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Site Plan - EcoTours Peru</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet" />
+
+  <style>
+    /* Color scheme */
+    :root {
+      --primary-color: #2a7a4a;  /* forest green for headers and buttons */
+      --secondary-color: #f0ead8; /* light beige for backgrounds */
+      --text-color: #333333;      /* dark gray for text */
+      --accent-color: #e07a5f;    /* coral for accents and links */
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: var(--secondary-color);
+      color: var(--text-color);
+      margin: 1rem 2rem;
+      line-height: 1.5;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Montserrat', sans-serif;
+      color: var(--primary-color);
+    }
+
+    header, section {
+      margin-bottom: 2rem;
+    }
+
+    a {
+      color: var(--accent-color);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Wireframe styles */
+    .wireframe-container {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .wireframe-box {
+      border: 2px dashed var(--primary-color);
+      padding: 1rem;
+      flex: 1 1 300px;
+      background: white;
+      border-radius: 5px;
+    }
+
+    .wireframe-title {
+      font-weight: 700;
+      margin-bottom: 1rem;
+      text-align: center;
+      color: var(--primary-color);
+    }
+
+    ul.scenarios {
+      list-style-type: disc;
+      margin-left: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Site Plan for EcoTours Peru</h1>
+  </header>
+
+  <main>
+    <section id="site-name">
+      <h2>Site Name</h2>
+      <p><strong>EcoTours Peru</strong></p>
+      <p>This name was chosen because it represents a project focused on offering eco-friendly and sustainable tours throughout Peru, highlighting the country’s natural and cultural richness.</p>
+      <p><em>Domain availability (optional): ecotoursperu.com (not confirmed)</em></p>
+    </section>
+
+    <section id="site-purpose">
+      <h2>Purpose of the Site</h2>
+      <p>EcoTours Peru aims to provide users with complete and up-to-date information about eco-tourism options in Peru, including tour descriptions, responsible travel recommendations, online booking, and contact with certified local guides.</p>
+    </section>
+
+    <section id="scenarios">
+      <h2>User Scenarios</h2>
+      <ul class="scenarios">
+        <li>What eco-tour options are available near Machu Picchu?</li>
+        <li>How can I book a tour and what are the cancellation policies?</li>
+      </ul>
+    </section>
+
+    <section id="color-scheme">
+      <h2>Color Scheme</h2>
+      <ul>
+        <li><strong>Forest Green (#2a7a4a):</strong> Used for headers, buttons, and main links.</li>
+        <li><strong>Light Beige (#f0ead8):</strong> Used as the page background color to provide a natural and warm feel.</li>
+        <li><strong>Coral (#e07a5f):</strong> Used for accents, links, and important highlights.</li>
+      </ul>
+    </section>
+
+    <section id="typography">
+      <h2>Typography</h2>
+      <ul>
+        <li><strong>Montserrat:</strong> Used for all headings (h1, h2, h3) to give a modern and professional look.</li>
+        <li><strong>Open Sans:</strong> Used for body text to ensure readability on digital devices.</li>
+      </ul>
+    </section>
+
+    <section id="wireframe">
+      <h2>Wireframe Diagram (Structure Sketch)</h2>
+      <div class="wireframe-container">
+        <div class="wireframe-box">
+          <div class="wireframe-title">Mobile View</div>
+          <ol>
+            <li>Header: logo + hamburger menu</li>
+            <li>Main banner with featured image and call to action</li>
+            <li>Featured tours section (vertical list)</li>
+            <li>Brief site info and benefits</li>
+            <li>Simple contact form</li>
+            <li>Footer with social and legal links</li>
+          </ol>
+        </div>
+
+        <div class="wireframe-box">
+          <div class="wireframe-title">Desktop View</div>
+          <ol>
+            <li>Header: logo + full horizontal menu</li>
+            <li>Main banner with image and left-aligned text</li>
+            <li>Featured tours in three columns</li>
+            <li>Detailed info section with images and text</li>
+            <li>Contact form in sidebar</li>
+            <li>Footer with social links, legal info, and sitemap</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>
