@@ -1,0 +1,52 @@
+{
+  "places": [
+    {
+      "name": "Town Park",
+      "image": "images/park.webp",
+      "address": "123 Main St",
+      "description": "A beautiful green space with trails, playgrounds and picnic areas."
+    },
+    {
+      "name": "History Museum",
+      "image": "images/museum.webp",
+      "address": "45 Museum Rd",
+      "description": "Explore local heritage and artifacts from the region."
+    },
+    {
+      "name": "Downtown Market",
+      "image": "images/market.webp",
+      "address": "78 Commerce St",
+      "description": "A bustling market with local vendors and crafts."
+    },
+    {
+      "name": "City Library",
+      "image": "images/library.webp",
+      "address": "56 Book Ln",
+      "description": "A quiet place to read, study, and attend events."
+    },
+    {
+      "name": "Aquatic Center",
+      "image": "images/pool.webp",
+      "address": "101 Swim Blvd",
+      "description": "Indoor pools, diving boards and swim lessons."
+    },
+    {
+      "name": "Botanical Garden",
+      "image": "images/garden.webp",
+      "address": "22 Flora Ave",
+      "description": "Exotic plants and peaceful walking paths."
+    },
+    {
+      "name": "Historic Theater",
+      "image": "images/theater.webp",
+      "address": "9 Drama Rd",
+      "description": "Local productions and visiting shows all year."
+    },
+    {
+      "name": "Mountain View Point",
+      "image": "images/mountain.webp",
+      "address": "End of Skyline Dr",
+      "description": "Panoramic views of the mountains and valley."
+    }
+  ]
+}

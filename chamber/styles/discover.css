@@ -1,0 +1,45 @@
+.discover-grid {
+  display: grid;
+  grid-template-areas:
+    "intro"
+    "visitor"
+    "cards";
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.intro {
+  grid-area: intro;
+}
+
+.visitor-message {
+  grid-area: visitor;
+  background-color: #f4f4f4;
+  padding: 1em;
+  border-left: 4px solid #0078d7;
+}
+
+.cards {
+  grid-area: cards;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.card {
+  border: 2px solid #ccc;
+  padding: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.card:hover img {
+  filter: brightness(1.1);
+  transform: scale(1.05);
+}
