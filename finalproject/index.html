@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Adopt a Friend — Home</title>
+  <meta name="description" content="Adopt a friend — browse dogs and cats ready for a loving home." />
+  <meta name="author" content="Ingrid" />
+  <link rel="icon" href="images/favicon.ico" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <div class="brand">🐾 Adopt a Friend</div>
+      <button id="menu-toggle" aria-label="Open menu">☰</button>
+      <ul id="nav-links" class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="gallery.html">Pets</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Find your new companion</h1>
+        <p>Dogs and cats ready to give love. Explore, filter and contact to adopt.</p>
+        <a class="btn" href="gallery.html">View Pets</a>
+      </div>
+      <div class="hero-illustration" aria-hidden="true">
+        <img src="images/logo.jpg" alt="Adopt a Friend office building" class="hero-image" />
+      </div>
+    </section>
+
+    <section class="preview">
+      <h2>Featured Pets</h2>
+      <div id="featured-cards" class="grid"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>&copy; 2025 Ingrid — <a href="attributions.html">Attributions</a></div>
+    <div><a href="https://youtu.be/TU_VIDEO" target="_blank" rel="noopener">Video demo (YouTube)</a></div>
+  </footer>
+
+  <script type="module" src="scripts/main.js"></script>
+</body>
+</html>

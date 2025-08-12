@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Form Submission</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <main>
+    <h1>Form Submission</h1>
+    <div id="results"></div>
+    <p><a href="index.html">Back to site</a></p>
+  </main>
+
+  <script>
+    const out = document.getElementById('results');
+    const params = new URLSearchParams(window.location.search);
+    if ([...params].length === 0) {
+      out.innerHTML = '<p>No data received.</p>';
+    } else {
+      out.innerHTML = '<ul>' + [...params].map(([k,v]) => `<li><strong>${k}:</strong> ${v}</li>`).join('') + '</ul>';
+    }
+  </script>
+</body>
+</html>

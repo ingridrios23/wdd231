@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pets — Adopt a Friend</title>
+  <meta name="description" content="Browse available pets for adoption." />
+  <meta name="author" content="Ingrid" />
+  <link rel="icon" href="images/dog8.jpg" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <div class="brand">🐾 Adopt a Friend</div>
+      <button id="menu-toggle" aria-label="Open menu">☰</button>
+      <ul id="nav-links" class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html" class="active">Pets</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="controls">
+      <label>
+        Filter by species:
+        <select id="filter-species" aria-label="Filter by species">
+          <option value="all">All</option>
+          <option value="Dog">Dog</option>
+          <option value="Cat">Cat</option>
+        </select>
+      </label>
+
+      <label>
+        Search by name:
+        <input id="search-name" type="search" placeholder="e.g. Luna" aria-label="Search by name">
+      </label>
+    </section>
+
+    <section>
+      <h1>Available Pets</h1>
+      <div id="pets-grid" class="grid"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>&copy; 2025 Ingrid — <a href="attributions.html">Attributions</a></div>
+  </footer>
+
+  <script type="module">
+    import { fetchPets } from './scripts/module/fetchdata.js';
+    import { setupModal } from './scripts/module/modal.js';
+
+    const grid = document.getElementById('pets-grid');
+    const filterSpecies = document.getElementById('filter-species');
+    const searchName = document.getElementById('search-name');
+
+    let pets = [];
+
+    async function init() {
+      try {
+        pets = await fetchPets();
+        renderGrid(pets);
+        setupModal(pets);
+      } catch (err) {
+        grid.innerHTML = '<p class="error">Could not load pets.</p>';
+        console.error(err);
+      }
+    }
+
+    function renderGrid(list) {
+      grid.innerHTML = list.map(p => cardHTML(p)).join('');
+      attachDetailButtons();
+    }
+
+    function cardHTML(p) {
+      return `
+        <article class="card" data-id="${p.id}" tabindex="0">
+          <img src="${p.image}" alt="${p.name} — ${p.species}" loading="lazy" />
+          <div class="card-body">
+            <h2>${p.name}</h2>
+            <p class="muted">${p.species} • ${p.breed} • ${p.age}</p>
+            <p>${p.description}</p>
+            <div class="card-actions">
+              <button class="details-btn">Details</button>
+            </div>
+          </div>
+        </article>
+      `;
+    }
+
+    function attachDetailButtons() {
+      document.querySelectorAll('.details-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          const card = e.target.closest('.card');
+          const id = Number(card.dataset.id);
+          const pet = pets.find(x => x.id === id);
+          if (pet) {
+            localStorage.setItem('lastViewedPet', JSON.stringify({ id: pet.id, name: pet.name, when: new Date().toISOString() }));
+            const modal = document.getElementById('modal');
+            if (modal && typeof modal.showPet === 'function') modal.showPet(pet);
+          }
+        });
+      });
+    }
+
+    filterSpecies.addEventListener('change', applyFilters);
+    searchName.addEventListener('input', applyFilters);
+
+    function applyFilters() {
+      const species = filterSpecies.value;
+      const q = searchName.value.trim().toLowerCase();
+      const filtered = pets.filter(p => {
+        const matchesSpecies = (species === 'all') || (p.species === species);
+        const matchesQuery = p.name.toLowerCase().includes(q);
+        return matchesSpecies && matchesQuery;
+      });
+      renderGrid(filtered);
+    }
+
+    init();
+  </script>
+
+  <script type="module" src="scripts/main.js"></script>
+</body>
+</html>

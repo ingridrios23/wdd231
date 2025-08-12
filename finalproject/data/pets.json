@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "name": "Bella",
+    "species": "Dog",
+    "breed": "Labrador Retriever",
+    "age": "2 years",
+    "description": "A playful and loving Labrador who enjoys long walks and playing fetch.",
+    "image": "images/dog1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Max",
+    "species": "Dog",
+    "breed": "German Shepherd",
+    "age": "3 years",
+    "description": "A loyal and intelligent dog, perfect for active families.",
+    "image": "images/dog2.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Luna",
+    "species": "Cat",
+    "breed": "Siamese",
+    "age": "1 year",
+    "description": "An affectionate Siamese cat who loves cuddles and warm spots.",
+    "image": "images/cat1.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Charlie",
+    "species": "Dog",
+    "breed": "Golden Retriever",
+    "age": "4 years",
+    "description": "A gentle Golden Retriever who loves kids and water games.",
+    "image": "images/dog3.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Milo",
+    "species": "Cat",
+    "breed": "Maine Coon",
+    "age": "5 years",
+    "description": "A large, fluffy cat with a calm and friendly personality.",
+    "image": "images/cat2.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Daisy",
+    "species": "Dog",
+    "breed": "Beagle",
+    "age": "2 years",
+    "description": "A curious Beagle who loves sniffing and exploring new places.",
+    "image": "images/dog4.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Oliver",
+    "species": "Cat",
+    "breed": "British Shorthair",
+    "age": "3 years",
+    "description": "A calm British Shorthair who enjoys sunny windows and soft blankets.",
+    "image": "images/cat3.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Rocky",
+    "species": "Dog",
+    "breed": "Bulldog",
+    "age": "4 years",
+    "description": "A strong but gentle Bulldog who enjoys short walks and naps.",
+    "image": "images/dog5.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Chloe",
+    "species": "Cat",
+    "breed": "Persian",
+    "age": "2 years",
+    "description": "A beautiful Persian cat who loves being pampered and brushed.",
+    "image": "images/cat4.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Buddy",
+    "species": "Dog",
+    "breed": "Border Collie",
+    "age": "3 years",
+    "description": "An energetic Border Collie who excels at learning tricks.",
+    "image": "images/dog6.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Simba",
+    "species": "Cat",
+    "breed": "Bengal",
+    "age": "1 year",
+    "description": "A playful Bengal cat with a striking spotted coat.",
+    "image": "images/cat5.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Lucy",
+    "species": "Dog",
+    "breed": "Poodle",
+    "age": "5 years",
+    "description": "A smart and elegant Poodle who loves grooming sessions.",
+    "image": "images/dog7.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Nala",
+    "species": "Cat",
+    "breed": "Ragdoll",
+    "age": "2 years",
+    "description": "A relaxed Ragdoll who enjoys being carried around.",
+    "image": "images/cat6.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Cooper",
+    "species": "Dog",
+    "breed": "Cocker Spaniel",
+    "age": "3 years",
+    "description": "A sweet Cocker Spaniel who loves playing with toys.",
+    "image": "images/dog8.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Zoe",
+    "species": "Cat",
+    "breed": "Scottish Fold",
+    "age": "4 years",
+    "description": "A quiet Scottish Fold who enjoys peace and quiet.",
+    "image": "images/cat7.jpg"
+  }
+]

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Adopt a Friend</title>
+  <meta name="description" content="Contact form for adoption inquiries." />
+  <meta name="author" content="Ingrid" />
+  <link rel="icon" href="images/favicon.ico" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <div class="brand">🐾 Adopt a Friend</div>
+      <button id="menu-toggle" aria-label="Open menu">☰</button>
+      <ul id="nav-links" class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Pets</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Contact</h1>
+    <form action="form-submission.html" method="GET" class="contact-form" novalidate>
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text" required />
+
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit" class="btn">Send</button>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div>&copy; 2025 Ingrid — <a href="attributions.html">Attributions</a></div>
+  </footer>
+</body>
+</html>
